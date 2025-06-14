@@ -1,0 +1,45 @@
+.main-content {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2rem;
+  color: #0f203f;
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.main-description {
+  font-size: 1.15rem;
+  color: #18191a;
+  margin-bottom: 28px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.main-button {
+  background: linear-gradient(90deg, #707e8d 0%, #6ee7b7 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+    font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.12);
+}
+
+.main-button:hover {
+  background: linear-gradient(90deg, #6ee7b7 0%, #4f8cff 100%);
+  box-shadow: 0 4px 16px rgba(79, 140, 255, 0.2);   
+}
+.main-button:active {
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.3);
+}

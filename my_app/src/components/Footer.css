@@ -1,0 +1,20 @@
+.footer {
+  background: linear-gradient(90deg, #b0cafc 0%, #6ee7b7 100%);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(79, 140, 255, 0.08);
+  margin-top: 40px;
+}
+
+.footer-text {
+  color: #041042;
+  font-size: 1rem;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  letter-spacing: 1px;  
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
