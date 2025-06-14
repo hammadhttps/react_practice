@@ -6,6 +6,7 @@ import Prop_case_2 from './components/prop_case_2';
 import Cond_rendering from './components/Cond_rendering';
 import Cond_rend_2 from './components/Cond_rend_2';
 import Greetings_and_Weather from './components/Greetings_and_Weather';
+import Icons_ from './components/icons_';
 const App = () => {
   return (
     //<Greet />
@@ -22,7 +23,8 @@ const App = () => {
   //<Prop_case_2 name="John Doe" fatherName="Doe Kittfisher" GrandFather="Fisher" Child="Ali DOe" ></Prop_case_2>
   //<Cond_rendering />
   //<Cond_rend_2 />
-  <Greetings_and_Weather Weather="Sunny" Name="Ali" illness="False" temp="25C" cond="Raining"></Greetings_and_Weather>
+ // <Greetings_and_Weather Weather="Sunny" Name="Ali" illness="False" temp="25C" cond="Raining"></Greetings_and_Weather>
+   <Icons_></Icons_>
 )};
 
 export default App;
