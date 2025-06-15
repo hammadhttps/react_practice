@@ -10,6 +10,9 @@ import Icons_ from './components/icons_';
 import {useState} from  "react";
 import Comp_2 from './components/Comp_2';
 import Comp_1 from './components/comp_1';
+import Example_1 from './components/Example_1';
+import Example_2 from './components/Example_2';
+import Example_3 from './components/Example_3';
 
 const App = () => {
   const[friends,setfriends]=useState(["alex","john","ali"]);
@@ -104,10 +107,15 @@ const App = () => {
   //   <button onClick={handle_click}>Change movie</button>
   // </section>
 
-<section>
-  <Comp_1 count={counter} onClickHandler={()=>setCount(counter+1)}></Comp_1>
-  <Comp_2 count={counter} onClickHandler={()=>setCount(counter-1)}></Comp_2>
-</section>
+// {/* <section>
+//   <Comp_1 count={counter} onClickHandler={()=>setCount(counter+1)}></Comp_1>
+//   <Comp_2 count={counter} onClickHandler={()=>setCount(counter-1)}></Comp_2>
+// </section> */}
+ <div>
+  <Example_1/>
+  <Example_2/>
+  <Example_3/>
+ </div>
     
 
 
