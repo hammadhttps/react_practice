@@ -8,6 +8,8 @@ import Cond_rend_2 from './components/Cond_rend_2';
 import Greetings_and_Weather from './components/Greetings_and_Weather';
 import Icons_ from './components/icons_';
 import {useState} from  "react";
+import Comp_2 from './components/Comp_2';
+import Comp_1 from './components/comp_1';
 
 const App = () => {
   const[friends,setfriends]=useState(["alex","john","ali"]);
@@ -93,15 +95,19 @@ const App = () => {
 
 
   //array of objects
+  // <section>
+  //   <ul>
+  //   {movies_objs.map(m=>(
+  //     <li key={Math.random()}>{m.title}</li>
+  //   ))}
+  //   </ul>
+  //   <button onClick={handle_click}>Change movie</button>
+  // </section>
 
-  <section>
-    <ul>
-    {movies_objs.map(m=>(
-      <li key={Math.random()}>{m.title}</li>
-    ))}
-    </ul>
-    <button onClick={handle_click}>Change movie</button>
-  </section>
+<section>
+  <Comp_1 count={counter} onClickHandler={()=>setCount(counter+1)}></Comp_1>
+  <Comp_2 count={counter} onClickHandler={()=>setCount(counter-1)}></Comp_2>
+</section>
     
 
 
