@@ -13,6 +13,8 @@ import Comp_1 from './components/comp_1';
 import Example_1 from './components/Example_1';
 import Example_2 from './components/Example_2';
 import Example_3 from './components/Example_3';
+import Todo_ from './components/Todo_';
+import Portal from './components/Portal';
 
 const App = () => {
   const[friends,setfriends]=useState(["alex","john","ali"]);
@@ -111,11 +113,18 @@ const App = () => {
 //   <Comp_1 count={counter} onClickHandler={()=>setCount(counter+1)}></Comp_1>
 //   <Comp_2 count={counter} onClickHandler={()=>setCount(counter-1)}></Comp_2>
 // </section> */}
- <div>
-  <Example_1/>
-  <Example_2/>
-  <Example_3/>
- </div>
+//  <div>
+//   <Example_1/>
+//   <Example_2/>
+//   <Example_3/>
+//   <Todo_/>
+//  </div>
+
+
+//portal
+<section>
+  <Portal/>
+</section>
     
 
 
