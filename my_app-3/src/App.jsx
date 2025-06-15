@@ -7,24 +7,39 @@ import Cond_rendering from './components/Cond_rendering';
 import Cond_rend_2 from './components/Cond_rend_2';
 import Greetings_and_Weather from './components/Greetings_and_Weather';
 import Icons_ from './components/icons_';
-const App = () => {
-  return (
-    //<Greet />
-   // <User_product />
-  /* <Props_case
-    img="https://picsum.photos/200/300"
-    alt="Random Image"
-    name="John Doe"
-    age={30}
-    isLoggedIn={() => "Yes, user is logged in"}
-    products={['Laptop', 'Smartphone', 'Tablet']}
-  ></Props_case>*/
+import {useState} from  "react";
 
-  //<Prop_case_2 name="John Doe" fatherName="Doe Kittfisher" GrandFather="Fisher" Child="Ali DOe" ></Prop_case_2>
-  //<Cond_rendering />
-  //<Cond_rend_2 />
- // <Greetings_and_Weather Weather="Sunny" Name="Ali" illness="False" temp="25C" cond="Raining"></Greetings_and_Weather>
-   <Icons_></Icons_>
+const App = () => {
+  const [counter,setCount]=useState(0);
+  //const [name,setName]=UseState("");
+  const increment=()=>setCount(counter+1);
+  const decrement = () => setCount(counter > 0 ? counter - 1 : 0);
+  return (
+    
+
+//     //<Greet />
+//    // <User_product />
+//   /* <Props_case
+//     img="https://picsum.photos/200/300"
+//     alt="Random Image"
+//     name="John Doe"
+//     age={30}
+//     isLoggedIn={() => "Yes, user is logged in"}
+//     products={['Laptop', 'Smartphone', 'Tablet']}
+//   ></Props_case>*/
+
+//   //<Prop_case_2 name="John Doe" fatherName="Doe Kittfisher" GrandFather="Fisher" Child="Ali DOe" ></Prop_case_2>
+//   //<Cond_rendering />
+//   //<Cond_rend_2 />
+//  // <Greetings_and_Weather Weather="Sunny" Name="Ali" illness="False" temp="25C" cond="Raining"></Greetings_and_Weather>
+//    <Icons_></Icons_>
+
+     <section>
+      <h1>{counter}</h1>       
+      <button onClick={increment}>+</button> 
+      <button onClick={decrement}>-</button> 
+     </section>
+
 )};
 
 export default App;
