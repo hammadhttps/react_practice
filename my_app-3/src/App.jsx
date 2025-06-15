@@ -10,11 +10,53 @@ import Icons_ from './components/icons_';
 import {useState} from  "react";
 
 const App = () => {
+  const[friends,setfriends]=useState(["alex","john","ali"]);
   const [counter,setCount]=useState(0);
   //const [name,setName]=UseState("");
   const increment=()=>setCount(counter+1);
   const decrement = () => setCount(counter > 0 ? counter - 1 : 0);
+  const add_friend= () =>setfriends([...friends,"hammad"]);
+  const rm_friend=()=>setfriends(friends.filter(f=>f!='hammad'))
+  const update_friend =()=>setfriends(friends.map(f=>f=='hammad'?'Alex':f))
+  
+  //for object 
+  const[movie,setmovie]=useState(
+    {
+      title:"MI-7",
+      rating:"9.8/10",
+      bussiness:"$10 Million"
+    }
+  );
+
+  // const change_rating=()=>{
+  //   const copy_movie={...movie,
+  //     rating:Math.ceil(Math.random()*10)
+  //   }
+  //   setmovie(copy_movie);
+  //}
+
+  const change_rating=()=>{
+  setmovie({...movie,rating:Math.ceil(Math.random()*10)   });
+  }
+
+  //array of objects
+  const[movies_objs,set_objs]=useState([{id:1,title:'spiderman'}
+    ,{id:2,title:'batman'},
+  {id:3,title:'superman'}]);
+
+
+
+  const handle_click=()=>{
+    
+     set_objs(movies_objs.map(m=>m.id==1?{...movies_objs,title:"title changed"}:m))
+    
+  }
+
+  
+  
   return (
+
+
     
 
 //     //<Greet />
@@ -34,11 +76,34 @@ const App = () => {
 //  // <Greetings_and_Weather Weather="Sunny" Name="Ali" illness="False" temp="25C" cond="Raining"></Greetings_and_Weather>
 //    <Icons_></Icons_>
 
-     <section>
-      <h1>{counter}</h1>       
-      <button onClick={increment}>+</button> 
-      <button onClick={decrement}>-</button> 
-     </section>
+    //  <section>
+    //   <h1>{counter}</h1>       
+    //   <button onClick={increment}>+</button> 
+    //   <button onClick={decrement}>-</button> 
+    //  </section>
+
+
+   //for object
+  //  <section>
+  //   <h1>{movie.title}</h1>
+  //   <h2>{movie.rating}</h2>
+  //   <h3>{movie.bussiness}</h3>
+  //   <button onClick={change_rating}>Change Ratings</button>
+  //  </section>
+
+
+  //array of objects
+
+  <section>
+    <ul>
+    {movies_objs.map(m=>(
+      <li key={Math.random()}>{m.title}</li>
+    ))}
+    </ul>
+    <button onClick={handle_click}>Change movie</button>
+  </section>
+    
+
 
 )};
 
