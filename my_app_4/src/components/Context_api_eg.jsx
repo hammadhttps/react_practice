@@ -1,6 +1,7 @@
 import React from 'react'
 import { createContext } from 'react'
 import Context_api_use from './Context_api_use';
+import Context_hook from './Context_hook';
 
 export const data=createContext();
 
@@ -13,7 +14,8 @@ const Context_api_eg = () => {
     <div>
            <data.Provider value={name}>
             <data.Provider value={age}>
-            <Context_api_use/>
+            {/* <Context_api_use/> */}
+            <Context_hook/>
             </data.Provider>
            </data.Provider>
     </div>

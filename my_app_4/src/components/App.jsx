@@ -3,6 +3,10 @@ import Switcher from './Switcher'
 import Use_effect from './Use_effect'
 import Fetch_data from './fetch_data'
 import Context_api_eg from './Context_api_eg'
+import Context_hook from './Context_hook'
+import User_profile from './User_profile'
+import { UserProvider } from './UserContext'
+import UpdateUser from './UpdateUser'
 
  
  const App = () => {
@@ -15,7 +19,10 @@ import Context_api_eg from './Context_api_eg'
 
     //context_api_eg
     <div>
-      <Context_api_eg/>
+      <UserProvider>
+      <User_profile/>
+      <UpdateUser/>
+      </UserProvider>
     </div>
 
    )
