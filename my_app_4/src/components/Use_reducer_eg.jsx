@@ -11,6 +11,8 @@ const reducer=(state,action)=>{
 
                 case 'reset':
                     return {...state,count:0};
+                case "set":
+                    return { ...state, count: action.payload+state.count };
                 default:
                     return state;
                     }
@@ -22,9 +24,17 @@ const Use_reducer_eg = () => {
   return (
     <div>
         <h1>Count:{state.count}</h1>
+        <input
+          type="number"
+          name=""
+          id=""
+        /* <button onClick={()=>dispatch({type:state.count})}></button> */
+          onChange={e => dispatch({ type: "set", payload: Number(e.target.value) })}
+        />
         <button onClick={()=>dispatch({type:"increment"})}>+</button>
         <button onClick={()=>dispatch({type:"decrement"})}>-</button>
         <button onClick={()=>dispatch({type:"reset"})}>Reset</button>
+        <button onClick={()=>dispatch({type:state.count})}>!</button>
     </div>
   )
 }
