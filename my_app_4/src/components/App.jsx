@@ -7,6 +7,7 @@ import Context_hook from './Context_hook'
 import User_profile from './User_profile'
 import { UserProvider } from './UserContext'
 import UpdateUser from './UpdateUser'
+import Use_reducer_eg from './Use_reducer_eg'
 
  
  const App = () => {
@@ -18,11 +19,17 @@ import UpdateUser from './UpdateUser'
      
 
     //context_api_eg
+    // <div>
+    //   <UserProvider>
+    //   <User_profile/>
+    //   <UpdateUser/>
+    //   </UserProvider>
+    // </div>
+
+    //use reducer eg
+
     <div>
-      <UserProvider>
-      <User_profile/>
-      <UpdateUser/>
-      </UserProvider>
+      <Use_reducer_eg/>
     </div>
 
    )
