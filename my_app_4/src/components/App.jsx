@@ -9,6 +9,8 @@ import { UserProvider } from './UserContext'
 import UpdateUser from './UpdateUser'
 import Use_reducer_eg from './Use_reducer_eg'
 import Use_reduce_pract from './Use_reduce_pract'
+import USe_ref_eg from './USe_ref_eg'
+import Timer from './Timer'
 
  
  const App = () => {
@@ -32,6 +34,8 @@ import Use_reduce_pract from './Use_reduce_pract'
     <div>
       <Use_reducer_eg/>
       <Use_reduce_pract/>
+      <USe_ref_eg/>
+      <Timer/>
     </div>
 
    )
