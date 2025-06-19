@@ -8,6 +8,7 @@ import User_profile from './User_profile'
 import { UserProvider } from './UserContext'
 import UpdateUser from './UpdateUser'
 import Use_reducer_eg from './Use_reducer_eg'
+import Use_reduce_pract from './Use_reduce_pract'
 
  
  const App = () => {
@@ -30,6 +31,7 @@ import Use_reducer_eg from './Use_reducer_eg'
 
     <div>
       <Use_reducer_eg/>
+      <Use_reduce_pract/>
     </div>
 
    )
