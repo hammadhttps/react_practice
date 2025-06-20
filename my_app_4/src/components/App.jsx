@@ -18,7 +18,9 @@ import Unique_id from './Unique_id'
  
  const App = () => {
     const [data]=Use_fetch('https://jsonplaceholder.typicode.com/posts/1');
-   return (
+   const { tasks, addTask, toggleTask, deleteTask } = useTasks();
+
+    return (
     //  <div>
     //     <Use_effect/>
     //     <Fetch_data/>
@@ -35,19 +37,23 @@ import Unique_id from './Unique_id'
 
     //use reducer eg
 
-    <div>
-      <Use_reducer_eg/>
-      <Use_reduce_pract/>
-      <USe_ref_eg/>
-      <Timer/>
-      <Custome_hook/>
-       {data && (
-            <p key={data.id}>{data.title}</p>
-        )}
-        <Unique_id/>
+    // <div>
+    //   <Use_reducer_eg/>
+    //   <Use_reduce_pract/>
+    //   <USe_ref_eg/>
+    //   <Timer/>
+    //   <Custome_hook/>
+    //    {data && (
+    //         <p key={data.id}>{data.title}</p>
+    //     )}
+    //     <Unique_id/>
+    // </div>
+    <div style={{ maxWidth: 500, margin: '40px auto', fontFamily: 'sans-serif' }}>
+      <h1>📝 Task Manager</h1>
+      <TaskForm onAdd={addTask} />
+      <TaskList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
     </div>
-
-   )
+  );
  }
- 
- export default App
+
+ export default App;
