@@ -13,6 +13,7 @@ import USe_ref_eg from './USe_ref_eg'
 import Timer from './Timer'
 import Custome_hook from './Custome_hook'
 import Use_fetch from './Use_fetch'
+import Unique_id from './Unique_id'
 
  
  const App = () => {
@@ -43,6 +44,7 @@ import Use_fetch from './Use_fetch'
        {data && (
             <p key={data.id}>{data.title}</p>
         )}
+        <Unique_id/>
     </div>
 
    )
