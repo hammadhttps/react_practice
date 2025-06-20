@@ -11,9 +11,12 @@ import Use_reducer_eg from './Use_reducer_eg'
 import Use_reduce_pract from './Use_reduce_pract'
 import USe_ref_eg from './USe_ref_eg'
 import Timer from './Timer'
+import Custome_hook from './Custome_hook'
+import Use_fetch from './Use_fetch'
 
  
  const App = () => {
+    const [data]=Use_fetch('https://jsonplaceholder.typicode.com/posts/1');
    return (
     //  <div>
     //     <Use_effect/>
@@ -36,6 +39,10 @@ import Timer from './Timer'
       <Use_reduce_pract/>
       <USe_ref_eg/>
       <Timer/>
+      <Custome_hook/>
+       {data && (
+            <p key={data.id}>{data.title}</p>
+        )}
     </div>
 
    )
