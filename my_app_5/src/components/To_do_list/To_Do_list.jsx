@@ -1,5 +1,5 @@
 import React from 'react'
-import UseTasks from './UseTasks'
+import UseTasks from './UseTasks';
 import TaskForm from './TaskForm';
 import TaskList from './TaskList';
 
