@@ -11,7 +11,7 @@ const TaskItem = ({task,onToggle,onDelete}) => {
      <span style={{
         textDecoration:task.completed?'line-through':'none',
         marginLeft:8
-     }}> </span>
+     }}>{task.text}</span>
      <button style={{
         marginLeft:10
      }} onClick={()=>onDelete(task.id)}>❌</button>
