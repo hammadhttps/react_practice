@@ -1,9 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import App from './App.tsx';
+import MyProvider from './components/Context_api/MyContext.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <MyProvider>
+       <App />
+    </MyProvider>
+   
   </StrictMode>,
 )
