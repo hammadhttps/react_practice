@@ -7,6 +7,7 @@ import Admin_Info from './components/Admin_Info';
 import Main from './components/Reusable_Types_For_Components/Main';
 import Counter from './components/Use_sate_types/Counter';
 import User_profile from './components/Use_sate_types/User_profile';
+import Form from './components/useRef_Forms_Events_Types/Form';
 
 
  const App = () => {
@@ -34,6 +35,7 @@ import User_profile from './components/Use_sate_types/User_profile';
 
       <Counter/>
       <User_profile/>
+      <Form/>
      </div>
    )
  }
