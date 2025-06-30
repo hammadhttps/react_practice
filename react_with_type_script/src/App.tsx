@@ -1,8 +1,11 @@
- import React from 'react'
+
+import User from './components/User'
  
  const App = () => {
    return (
-     <div>App</div>
+     <div>
+      <User name="Hammad" Age={20} Gender="Male"/>
+     </div>
    )
  }
  
