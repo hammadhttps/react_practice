@@ -5,6 +5,8 @@ import type { Info,AdminInfo } from './types';
 import User_info from './components/User_info';
 import Admin_Info from './components/Admin_Info';
 import Main from './components/Reusable_Types_For_Components/Main';
+import Counter from './components/Use_sate_types/Counter';
+import User_profile from './components/Use_sate_types/User_profile';
 
 
  const App = () => {
@@ -23,12 +25,15 @@ import Main from './components/Reusable_Types_For_Components/Main';
 
    return (
      <div>
-      <Main></Main>
+      {/* <Main></Main>
       <User_info user={user} ></User_info>
       <Admin_Info admin={admin}></Admin_Info>
       <User name="Hammad" Age={20} Gender="Male"/>
       <Button label='Click' onClick={()=>console.log('Clicked')
-      } disabled={false}></Button>
+      } disabled={false}></Button> */}
+
+      <Counter/>
+      <User_profile/>
      </div>
    )
  }
