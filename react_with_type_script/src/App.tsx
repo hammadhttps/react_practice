@@ -7,7 +7,7 @@ import Admin_Info from './components/Admin_Info';
 import Main from './components/Reusable_Types_For_Components/Main';
 import Counter from './components/Use_sate_types/Counter';
 import User_profile from './components/Use_sate_types/User_profile';
-import Form from './components/useRef_Forms_Events_Types/Form';
+import Form from './components/ReactHookForm/Form';
 import Fpcus_input from './components/useRef_Forms_Events_Types/Fpcus_input';
 import Contact_form from './components/useRef_Forms_Events_Types/Contact_form';
 import Event_handling from './components/useRef_Forms_Events_Types/Event_handling';
@@ -43,6 +43,7 @@ import User_list from './components/User_list';
        {/* <Contact_form/>
        <Event_handling/> */}
        <User_list/>
+       <Form/>
      </div>
    )
  }
