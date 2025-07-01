@@ -11,7 +11,7 @@ import Form from './components/useRef_Forms_Events_Types/Form';
 import Fpcus_input from './components/useRef_Forms_Events_Types/Fpcus_input';
 import Contact_form from './components/useRef_Forms_Events_Types/Contact_form';
 import Event_handling from './components/useRef_Forms_Events_Types/Event_handling';
-import Counter from './components/Use_reducer';
+import User_list from './components/User_list';
 
  const App = () => {
   const user:Info={
@@ -39,9 +39,10 @@ import Counter from './components/Use_reducer';
       {/* <Counter/>
       <User_profile/>
       <Form/>
-      <Fpcus_input/> */}
-      <Contact_form/>
-      <Event_handling/>
+      // <Fpcus_input/> */}
+       {/* <Contact_form/>
+       <Event_handling/> */}
+       <User_list/>
      </div>
    )
  }
