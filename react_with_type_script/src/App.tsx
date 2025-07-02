@@ -12,6 +12,7 @@ import Fpcus_input from './components/useRef_Forms_Events_Types/Fpcus_input';
 import Contact_form from './components/useRef_Forms_Events_Types/Contact_form';
 import Event_handling from './components/useRef_Forms_Events_Types/Event_handling';
 import User_list from './components/User_list';
+import Advance_form from './components/ReactHookForm/Advance_form';
 
  const App = () => {
   const user:Info={
@@ -44,6 +45,7 @@ import User_list from './components/User_list';
        <Event_handling/> */}
        <User_list/>
        <Form/>
+       <Advance_form/>
      </div>
    )
  }
