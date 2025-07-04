@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import type { SubmitHandler } from 'react-hook-form';
-import './Advance_form.module.css'
 
 interface FormData {
     firstname: string;
